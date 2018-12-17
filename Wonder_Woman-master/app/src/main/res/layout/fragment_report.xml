@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="adjustNothing">
+
+    <TextView
+        android:id="@+id/report_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/report_title"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/report_location"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:text="신고할 장소 주소"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/report_title" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/get_address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/report_location">
+
+        <EditText
+            android:id="@+id/text_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/colorBlack"
+            android:hint="ex)서울시 XX동 XX구 XX로"
+            android:textCursorDrawable="@color/colorHighLightRed" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/get_address"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:background="@drawable/round_rect_button"
+        android:text="현재 주소 불러오기"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/input_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input_address"
+        app:layout_constraintTop_toTopOf="@+id/input_address" />
+
+    <TextView
+        android:id="@+id/report_detail_location"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="상세 주소"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_address" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_detail_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/report_detail_location">
+
+        <EditText
+            android:id="@+id/text_detail_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/colorBlack"
+            android:hint="ex)XX빌딩 3층 여자화장실 두번째칸."
+            android:textCursorDrawable="@color/colorHighLightRed" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/report_info"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="신고 내용"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_detail_address" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/report_info">
+
+        <EditText
+            android:id="@+id/text_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/colorBlack"
+            android:hint="ex)수상한 구멍이 있어요."
+            android:textCursorDrawable="@color/colorHighLightRed" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/report_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="신고 사진 (촬영에 유의 하시기 바랍니다.)"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_info" />
+
+    <ImageView
+        android:id="@+id/report_image_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_camera"
+        app:layout_constraintBottom_toTopOf="@+id/report_button"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/report_photo" />
+
+    <Button
+        android:id="@+id/report_button"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/round_rect_button"
+        android:text="신 고  하 기"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

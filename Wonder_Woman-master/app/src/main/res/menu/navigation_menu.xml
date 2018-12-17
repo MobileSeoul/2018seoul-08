@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/menu_home"/>
+
+    <item
+        android:id="@+id/action_clean"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/ic_shield"
+        android:title="@string/menu_clean"/>
+
+    <item
+        android:id="@+id/action_report"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/ic_report"
+        android:title="@string/menu_report"/>
+
+    <item
+        android:id="@+id/action_relieved"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/ic_service"
+        android:title="@string/menu_relieved"/>
+
+    <item
+        android:id="@+id/action_person"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/ic_person"
+        android:title="@string/menu_person"/>
+</menu>

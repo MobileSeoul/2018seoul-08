@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/popup_take_picture"
+        android:title="사진 찍기" />
+
+    <item
+        android:id="@+id/popup_photo_select"
+        android:title="앨범에서 선택" />
+
+    <item
+        android:id="@+id/popup_cancel"
+        android:title="취소" />
+</menu>

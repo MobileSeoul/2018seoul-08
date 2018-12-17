@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Woder_Woman</string>
+
+    <string name="menu_home">처음으로</string>
+    <string name="menu_clean">안심 존</string>>
+    <string name="menu_report">신고 하기</string>
+    <string name="menu_relieved">안심 서비스 </string>
+    <string name="menu_person">개인정보</string>
+
+    <string name="string_close_warning"> 한 번 더 누르면 종료됩니다.</string>
+    <string name="report_title">의심 지역 신고</string>
+    <string name="main_title">원더 우먼</string>
+    <string name="wrong_password">비밀번호가 불일치</string>
+    <string name="correct_password">비밀번호 일치</string>
+</resources>
